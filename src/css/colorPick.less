@@ -1,0 +1,45 @@
+.color-pick {
+  position: absolute;
+  z-index: 2147483640;
+  cursor: crosshair;
+  left: 0px;
+  top: 0px;
+  display: block;
+}
+.color-pick-selected {
+  position: absolute;
+  z-index: 2147483640;
+  .color-pick-data {
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: rgb(76, 76, 76) 0px 0px 0px 1px;
+    border-radius: 50%;
+    .colors {
+      display: flex;
+      .color {
+        display: flex;
+        width: 10px;
+        height: 10px;
+        box-shadow: #ddd 0px 0px 0px 1px;
+      }
+      .color-active {
+        display: flex;
+        width: 10px;
+        height: 10px;
+        box-shadow: red 0px 0px 0px 1px;
+      }
+    }
+  }
+  .color-hex {
+    border: 0;
+    text-align: center;
+    width: 110px;
+    color: #666;
+    margin-top: 10px;
+  }
+  .tips {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+  }
+}
